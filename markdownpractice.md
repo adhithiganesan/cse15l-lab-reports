@@ -33,3 +33,10 @@
 more inline code
 this is cool
 ```
+
+#VS code is so cool for this
+``` 
+like i can see the live edits
+right now 
+as i type this
+```
