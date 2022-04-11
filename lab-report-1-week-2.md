@@ -43,7 +43,7 @@ On the terminal, try running some commands like: cd, ls, pwd, mkdir, and cp. You
 
 Create a file called "Slay.java" (it is imperative that you name the file this) and put the following into the file:
 ```
-class WhereAmI {
+class Slay {
   public static void main(String[] args) {
     System.out.println(System.getProperty("os.name"));
     System.out.println(System.getProperty("user.name"));
