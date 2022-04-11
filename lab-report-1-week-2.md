@@ -1,6 +1,6 @@
 
 
-# Week 2 Lab Report
+# **Week 2 Lab Report**
 *By: Adhithi Ganesan*
 
 ## Step 1: Installing VS Code
