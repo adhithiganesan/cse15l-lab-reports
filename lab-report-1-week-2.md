@@ -18,7 +18,9 @@ Click on the download button under the system you are using and it should begin 
 
 Use this [Link](https://sdacs.ucsd.edu/~icc/index.php) to find your student account for the CSE 15L course. Then open Visual Studio Code and on the command line, enter:
 
+```
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
+```
 
 ** But replace the zz with the letters in your account. 
 
@@ -33,7 +35,11 @@ Your terminal should display a message like this once you complete all the steps
 
 ## Step 3: Trying Some Commands
 
-On the terminal, try running some commands like: cd, ls, pwd, mkdir, and cp. You can try this both on your computer and the remote computer after using ssh. If you were to run the command ls-lat, you should get an output on the terminal that looks similar to this: 
+On the terminal, try running some commands like: 
+`cd`,
+` ls`,
+` pwd`, 
+`mkdir`, and `cp`. You can try this both on your computer and the remote computer after using `ssh`. If you were to run the command `ls-lat`, you should get an output on the terminal that looks similar to this: 
 
 ![Image](vscode2)
 
@@ -53,9 +59,11 @@ class Slay {
 }
 ```
 Run the file using javac and java and then enter this in the command line of the terminal: 
+```
 scp slay.java cs15lsp22zz@ieng6.ucsd.edu:~/
+```
 
-Log into your ieng6 account again with ssh and use ls. Your file should now be in the home directory. 
+Log into your ieng6 account again with `ssh` and use `ls`. Your file should now be in the home directory. 
 
 Your output should look something like this:
 
@@ -63,7 +71,7 @@ Your output should look something like this:
 
 ----
 
-## Step 5: Setting an SSH Key
+## Step 5: Setting an `SSH` Key
 
 Run the following code: 
 ```
@@ -102,8 +110,14 @@ You should get something that looks like this:
 
 There are a lot of shortcuts to make remote running easier! 
 Some include: 
-- Including commands in quotes after entering your ieng6 account (Ex. $ ssh cs15lsp22zz@ieng6.ucsd.edu "ls")
-- You can also use semi colons to run multiple commands in one line(Ex. $ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java Slay)
+- Including commands in quotes after entering your ieng6 account. Ex: 
+```
+$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"
+```
+- You can also use semi colons to run multiple commands in one line. Ex:
+```
+ $ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java Slay
+ ```
 - You can use the up arrow to copy previous terminal commands and rerun them. 
 
 The last shortcut is my favorite. Especially when I have multiple errors in my code and it won't compile, I can easily change the code and run it using the up arrow instead of using the javac and java commands every time. 
