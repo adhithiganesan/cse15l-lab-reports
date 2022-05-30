@@ -10,11 +10,20 @@
 Snippet 1: 
 ![Image](snippet1expected)
 
+Expected Output for Snippet 1:
+```[`google.com, google.com, ucsd.edu]```
+
 Snippet 2: 
 ![Image](snippet2expected)
 
+Expected Output for Snippet 2: 
+```[a.com, a.com(()), example.com]```
+
 Snippet 3:
 ![Image](snippet3expected)
+
+Expected Output for Snippet 3:
+```[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]```
 
 # Code in ```MarkdownParseTest.java``` for tests:
 ![Image](snippettestscode)
@@ -31,7 +40,7 @@ I created new md. files with the snippets and called the ```getLinks()``` method
 # Questions
 ## **Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.**
 
-Yes, you can increment the currentIndex by 1 if it encounters a backtick using the ```indexOf(" ` ")``` method and an if statement. This would allow the program to skip over the backtick and continue parsing throught the file. 
+Yes, you create a variable to keep count of the backticks and if there is an even number of backticks, or if for every open backtick there is a closing backtick, then you can ignore them. If not, you can choose to increment the currIndex a backtick. 
 
 ## **Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.**
 
